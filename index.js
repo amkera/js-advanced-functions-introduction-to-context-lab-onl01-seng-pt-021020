@@ -50,6 +50,8 @@ let hoursWorkedOnDate = function(employee, soughtDate){
 
     return (outEvent.hour - inEvent.hour) / 100
 }
-
+let wagesEarnedOnDate = function(employee, soughtDate) {
+  return hoursWorkedOnDate*(employee.payPerHour);
+}
 
 
