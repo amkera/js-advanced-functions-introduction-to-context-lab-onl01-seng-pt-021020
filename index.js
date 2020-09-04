@@ -39,4 +39,8 @@ let createTimeOutEvent = function(employeeObject, dateStamp) {
   
 }
 
+let hoursWorkedOnDate = function(employeeObject, dateStamp) {
+  let hoursWorked = employeeObject.timeOutEvents.hour - employeeObject.timeInEvents.hour;
+  return hoursWorked;
+}
 
