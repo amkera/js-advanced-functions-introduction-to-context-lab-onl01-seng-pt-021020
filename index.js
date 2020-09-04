@@ -58,6 +58,8 @@ let wagesEarnedOnDate = function(employee, dateSought){
     return parseFloat(rawWage.toString())
 }
 
-
+let allWagesFor = function(employeeObject) {
+  employeeObject.map()
+}
 
 
