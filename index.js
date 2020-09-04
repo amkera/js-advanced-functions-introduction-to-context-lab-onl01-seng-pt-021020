@@ -29,8 +29,9 @@ let createTimeInEvent = function(employeeObject, dateStamp) {
 
 let createTimeOutEvent = function(employeeObject, dateStamp) {
   let [date, hour] = dateStamp.split(" ")
-  employeeObject.timeInEvents.push({
-    type: "TimeIn", 
+  //"YYYY-MM-DD HHMM"
+  employeeObject.timeOutEvents.push({
+    type: "TimeOut", 
     hour: parseInt(hour, 10),
     date: date
   })
