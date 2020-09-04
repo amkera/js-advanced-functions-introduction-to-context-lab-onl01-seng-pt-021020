@@ -72,10 +72,13 @@ let allWagesFor = function(employeeObject) {
   
 }
 
-let findEmployeeByFirstName = function(srcArray, firstNameString) {
-  srcArray.filter(function(name) {
-    name === firstName
+let findEmployeeByFirstName = function(srcArray, firstName) {
+  return srcArray.find(function(rec){
+    return rec.firstName === firstName
   })
+}
+
+let calculatePayroll = function(arrayOfEmployeeRecords) {
   
 }
 
